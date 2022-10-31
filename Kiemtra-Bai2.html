@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let Array=[1,4,5,3,6,2];
+let x=+prompt("Nhập số nguyên");
+let index=+prompt("Nhập vị trí");
+insertNumberToArray(Array,x,index)
+function insertNumberToArray(Array,x,index) {
+    if (index < 0 || index > Array.length) {
+        alert(Array)
+    } else {
+        Array.splice(index, 0, x)
+        alert(Array)
+    }
+}
+</script>
+</body>
+</html>

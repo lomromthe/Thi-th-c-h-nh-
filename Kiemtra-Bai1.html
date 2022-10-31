@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diem = [6,5,8,9,7,4,10];
+    let sum = 0;
+    let tb;
+    findAvg(diem);
+    function findAvg(diem) {
+        for (let i = 0; i < diem.length; i++) {
+            sum = sum + diem[i];
+        }
+        tb= sum/diem.length;
+    }
+    document.write("Điểm trung bình danh sách là: " + tb);
+</script>
+</body>
+</html>
